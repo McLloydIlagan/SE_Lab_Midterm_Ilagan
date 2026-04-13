@@ -19,9 +19,13 @@ This document analyzes the software quality of my Cryptocurrency Analysis Tool a
 **How my module implements this:**
 
 | Mechanism | Implementation | Code Example |
+
 | Input Validation | All public methods validate inputs | `if not symbol: raise ValueError` |
+
 | Error Handling | Try-catch blocks for API calls | `try: requests.get() except: raise Exception` |
+
 | Data Validation | Check minimum data requirements | `if len(df) < 14: raise Exception` |
+
 | Timeout Protection | API requests have timeouts | `requests.get(timeout=10)` |
 
 **Code Example from my module:**
